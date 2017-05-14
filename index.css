@@ -108,9 +108,9 @@
     transition: 0.2s;
 }
 
-/*---------------------ABOUT---------------------*/
+/*---------------------TEXT---------------------*/
 
-#about-header {
+#text-header {
     font-family: "Rubik", sans-serif;
     position: relative;
     display: inline-block;
@@ -122,16 +122,23 @@
     font-size: 1.2em;
 }
 
-.about-text {
+.paragraph-text {
 		letter-spacing: 1px;
 		font-size: 0.8em;
 		position: relative;
 		top: 10px;
 }
 
-#about-text hr {
+.category {
+		font-weight: bold;
+		font-size: 1em;
+		position: relative;
+		top: 12px;
+}
+
+.underline {
     position: relative;
-    bottom: 10px;
+    top: 10px;
 }
 
 /*---------------------FOOTER---------------------*/
