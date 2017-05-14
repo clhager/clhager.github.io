@@ -64,6 +64,7 @@
     left: 90px;
     top: 20px;
     list-style-type: none;
+		font-family: "Rubik", sans-serif;
 }
 
 #nav-bar li a {
@@ -105,4 +106,49 @@
     opacity: 1;
     left: 110px;
     transition: 0.2s;
+}
+
+/*---------------------ABOUT---------------------*/
+
+#about-header {
+    font-family: "Rubik", sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    left: 200px;
+    bottom: 50px;
+    letter-spacing: 4px;
+    font-size: 1.2em;
+}
+
+.about-text {
+		letter-spacing: 1px;
+		font-size: 0.8em;
+		position: relative;
+		top: 10px;
+}
+
+#about-text hr {
+    position: relative;
+    bottom: 10px;
+}
+
+/*---------------------FOOTER---------------------*/
+
+#footer {
+		background: #ecf0f1;
+		color: #95a5a6;
+		clear: both;
+		width: 100%;
+		padding: 12;
+		font-family: "Rubik", sans-serif;
+		font-size: 0.8em;
+		position: relative;
+		top: 120px;
+}
+
+#footer div {
+    display: inline;
+    position: relative;
+    left: 80px;
 }
