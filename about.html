@@ -23,17 +23,50 @@
 			</div>
 			<div id="header_descriptor">
 				uc berkeley | may 2019
-			</div>
 		</section>
 		<section id="body">
 			<ul id="nav-bar">
-			    <li><a href="index.html"> Home </a></li>
-			    <li><a href="about.html"> About </a></li>
-			    <li><a href="resume.html"> Resume </a></li>
-			    <li><a href="projects.html"> Projects </a></li>
-			    <li><a href="resume.html"> </a></li>
-			    <li><a href="resume.html"> </a></li>
+			    <li><a href="index.html">
+			        <span> Home </span></a></li>
+			    <li><a class="active" href="about.html">
+			        <span> About </span></a></li>
+			    <li><a href="resume.html">
+			        <span> Resume </span></a></li>
+					<li><a href="coursework.html">
+		 					<span> Coursework </span></a></li>
+			    <li><a href="projects.html">
+			        <span> Projects </span></a></li>
+			    <li><a href="resume.html">
+			        <span> Groups </span></a></li>
+			    <li><a href="resume.html">
+			        <span> Awards </span></a></li>
 			</ul>
+			<div id="about-header">
+			    <p> About Me </p>
+			    <hr>
+					<p class="about-text"> Hello! </p>
+			    <p class="about-text"> My name is Charles Hager and I'm a junior studying
+						Electrical Engineering and Computer Science at UC Berkeley, with a minor
+						in Mechanical Engineering. I was born in Paris, France and grew up in
+						Los Angeles, California before attending high school in Rye, New York. </p>
+					<p class="about-text"> I fell in love with computer science after taking my
+						first course in college in sophomore year. Since then it's been a crazy
+						ride trying to learn as much as I can. I'm also passionate about cooking,
+						I teach a baking class on the Berkeley campus to introduce other students
+						to making anything from cookies to cream puffs. I'm also very active in
+						the dance community, being on various dance teams since freshman year.
+						I'm bilingual, growing up in a French and American household with both languages
+						spoken regularly. My dreams for the future are to travel through the entire
+						world and experience the nature and cuisine from every corner of the globe.</p>
+			</div>
+		</section>
+		<section id="footer">
+			<div id="footer-content">
+				&copy; <span id="current-year"></span> Charles Hager. All rights reserved.
+			</div>
+			<script>
+					document.getElementById("current-year").innerHTML = new Date().getFullYear();
+			</script>
 		</section>
 	</body>
 </html>
