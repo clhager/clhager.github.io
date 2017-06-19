@@ -2,28 +2,32 @@
 <html>
 	<head>
 		<title> Charles Hager </title>
-		<link type="text/css" rel="stylesheet" href="index.css" />
+		<!--Imports-->
+		<link type="text/css" rel="stylesheet" href="assets/stylesheet.css" />
+		<!--Google APIs-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500"/>
-		<link rel="icon" href="title_pic.png" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!--Tab Logo-->
+		<link rel="icon" type="image/png" href="images/icon.png" />
 	</head>
+
 	<body>
+		<!--Header-->
 		<section id="header">
 			<div id="header_name">
 				Charles Hager
 			</div>
 			<ul id="menu">
-			    <a href="mailto:clhager@berkeley.edu"><li> email </li></a>
-				<a href="https://www.linkedin.com/in/charles-hager-914b54135/"><li> linkedIn </li></a>
-				<a href="https://github.com/clhager?tab=repositories">
-					<li> github </li></a>
-				<hr>
+			    <a href="mailto:clhager@berkeley.edu" target="_blank"><li> email </li></a>
+				<a href="https://www.linkedin.com/in/charles-hager-914b54135/" target="_blank"><li> linkedIn </li></a>
+				<a href="https://github.com/clhager?tab=repositories" target="_blank"><li> github </li></a>
 			</ul>
 			<div id="header_descriptor">
-				student | developer
+				student &#160; | &#160; developer
 			</div>
-			<div id="header_descriptor">
-				uc berkeley | may 2019
 		</section>
+
+		<!--Body-->
 		<section id="body">
 			<ul id="nav-bar">
 			    <li><a href="index.html">
@@ -33,51 +37,52 @@
 			    <li><a href="resume.pdf" target="_blank">
 			        <span> Resume </span></a></li>
 				<li><a class="active" href="coursework.html">
-		 				<span> Coursework </span></a></li>
+		 			<span> Coursework </span></a></li>
 			    <li><a href="projects.html">
 			        <span> Projects </span></a></li>
-			    <li><a href="resume.html">
+			    <li><a href="groups.html">
 			        <span> Groups </span></a></li>
-			    <li><a href="resume.html">
-			        <span> Awards </span></a></li>
 			</ul>
-			<div id="text-header">
-			    <p> Coursework </p>
-			    <hr class="underline">
-					<p class="paragraph-text"> <span class="category"> Computer Science </p>
-					<hr class="underline">
-					<p class="paragraph-text"> CS 61A: Structure and Interpretation of Computer Programs </p>
-					<p class="paragraph-text"> CS 61B: Data Structures </p>
-					<p class="paragraph-text"> CS 61C: Machine Structures </p>
-					<p class="paragraph-text"> CS 70: Discrete Mathematics and Probability Theory </p>
-					<p class="paragraph-text"> <span class="category"> Electrical Engineering </p>
-					<hr class="underline">
-					<p class="paragraph-text"> EE 16A: Designing Information Devices and Systems I </p>
-					<p class="paragraph-text"> <span class="category"> Mechanical Engineering </p>
-					<hr class="underline">
-					<p class="paragraph-text"> ME 40: Thermodynamics </p>
-					<p class="paragraph-text"> ME C85: Statics and Mechanics of Solids </p>
-					<p class="paragraph-text"> ME 132: Dynamic Systems and Feedback </p>
-					<p class="paragraph-text"> <span class="category"> Engineering </p>
-					<hr class="underline">
-					<p class="paragraph-text"> E 7: MATLAB Programming for Engineers </p>
-					<p class="paragraph-text"> E 25: 3D Visualization for Design </p>
-					<p class="paragraph-text"> E 26: 3D Modeling for Design </p>
-					<p class="paragraph-text"> <span class="category"> General Math/Sciences </p>
-					<hr class="underline">
-					<p class="paragraph-text"> Math 53: Multivariable Calculus </p>
-					<p class="paragraph-text"> Math 54: Linear Algebra and Differential Equations </p>
-					<p class="paragraph-text"> Physics 7A: Mechanics </p>
-					<p class="paragraph-text"> Physics 7B: Thermodynamics, Electricity, Magnetism </p>
+			<div id="text">
+			    <p id="text-header"> Coursework </p>
+			    <hr>
+				<p class="paragraph-text"> <span class="category"> Computer Science </p>
+				<hr>
+				<p class="paragraph-text"> CS 61A: Structure and Interpretation of Computer Programs </p>
+				<p class="paragraph-text"> CS 61B: Data Structures </p>
+				<p class="paragraph-text"> CS 61C: Machine Structures </p>
+				<p class="paragraph-text"> CS 70: Discrete Mathematics and Probability Theory </p>
+				<p class="paragraph-text"> <span class="category"> Electrical Engineering </p>
+				<hr>
+				<p class="paragraph-text"> EE 16A: Designing Information Devices and Systems I </p>
+				<p class="paragraph-text"> <span class="category"> Mechanical Engineering </p>
+				<hr class="underline">
+				<p class="paragraph-text"> ME 40: Thermodynamics </p>
+				<p class="paragraph-text"> ME C85: Statics and Mechanics of Solids </p>
+				<p class="paragraph-text"> ME 132: Dynamic Systems and Feedback </p>
+				<p class="paragraph-text"> <span class="category"> Engineering </p>
+				<hr class="underline">
+				<p class="paragraph-text"> E 7: MATLAB Programming for Engineers </p>
+				<p class="paragraph-text"> E 25: 3D Visualization for Design </p>
+				<p class="paragraph-text"> E 26: 3D Modeling for Design </p>
+				<p class="paragraph-text"> <span class="category"> General Math/Sciences </p>
+				<hr class="underline">
+				<p class="paragraph-text"> Math 53: Multivariable Calculus </p>
+				<p class="paragraph-text"> Math 54: Linear Algebra and Differential Equations </p>
+				<p class="paragraph-text"> Physics 7A: Mechanics </p>
+				<p class="paragraph-text"> Physics 7B: Thermodynamics, Electricity, Magnetism </p>
 			</div>
 		</section>
+
+		<!--Footer-->
 		<section id="footer">
-			<div id="footer-content">
+			<div>
 				&copy; <span id="current-year"></span> Charles Hager. All rights reserved.
 			</div>
 			<script>
 					document.getElementById("current-year").innerHTML = new Date().getFullYear();
 			</script>
 		</section>
+
 	</body>
 </html>

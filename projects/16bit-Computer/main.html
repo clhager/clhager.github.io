@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Charles Hager </title>
+		<!--Imports-->
+		<link type="text/css" rel="stylesheet" href="../../assets/stylesheet.css" />
+		<!--Google APIs-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<!--Tab Logo-->
+		<link rel="icon" type="image/png" href="icon.png" />
+	</head>
+
+	<body>
+		<!--Header-->
+		<section id="header">
+			<div id="header_name">
+				Charles Hager
+			</div>
+			<ul id="menu">
+			    <a href="mailto:clhager@berkeley.edu" target="_blank"><li> email </li></a>
+				<a href="https://www.linkedin.com/in/charles-hager-914b54135/" target="_blank"><li> linkedIn </li></a>
+				<a href="https://github.com/clhager?tab=repositories" target="_blank"><li> github </li></a>
+			</ul>
+			<div id="header_descriptor">
+				student &#160; | &#160; developer
+			</div>
+		</section>
+
+		<!--Body-->
+		<section id="body">
+			<ul id="nav-bar">
+			    <li><a href="../../index.html">
+			        <span> Home </span></a></li>
+			    <li><a href="../../about.html">
+			        <span> About </span></a></li>
+			    <li><a href="../../resume.pdf" target="_blank">
+			        <span> Resume </span></a></li>
+				<li><a href="../../coursework.html">
+		 			<span> Coursework </span></a></li>
+			    <li><a class="active" href="../../projects.html">
+			        <span> Projects </span></a></li>
+			    <li><a href="../../groups.html">
+			        <span> Groups </span></a></li>
+			</ul>
+			<div id="text">
+			    <p> 16-bit Computer </p>
+			    <hr>
+			    <p class="paragraph-text"> This project is a functional 16-bit computer created using the software <a href="http://www.cburch.com/logisim/" target="_blank">Logisim</a>, a program that simulates logic circuits and physical computer architecture. The computer has a dedicated machine code set and a basic programming language, and I'm in the process of writing a compiler in Java to take in a program and compile it into the machine language. This computer supports mathematic operations, variable assignments, basic scripting, function calls, simple objects, and basic recursion. </p>
+				<p class="paragraph-text"> You can find the Git repo <a href="https://github.com/clhager/16bit-Computer" target="_blank">here</a>.</p>
+				<p class="paragraph-text"> Watch the program executions: </p>
+				<button onclick="Fibonacci()"> Fibonacci </button>
+				<button> QuickSort </button>
+				<center><img id="main_img" src="logo.png" /></center>
+				<button onclick="CPU()"> Main CPU </button>
+				<button onclick="Register()"> Register (A/B) </button>
+				<button onclick="ALU()"> ALU </button>
+				<button onclick="ProgramMemory()"> Program Memory </button>
+				<button onclick="InstReg()"> Instruction Register </button>
+				<button> MicroInstructions Unit </button>
+				<button> Output Register </button>
+				<button> Jump </button>
+				<hr>
+				<p class="paragraph-text"><span id="computer-part"><strong> Main CPU: </strong></span></p>
+				<p class="descrip-text"><span id="computer-descrip"> This is the main part of the CPU. </span></p>
+			</div>
+		</section>
+
+		<!--Footer-->
+		<section id="footer">
+			<div>
+				&copy; <span id="current-year"></span> Charles Hager. All rights reserved.
+			</div>
+			<script>
+					document.getElementById("current-year").innerHTML = new Date().getFullYear();
+			</script>
+		</section>
+
+	</body>
+</html>
