@@ -163,6 +163,7 @@ html, body {
 	font-size: 1em;
 	position: relative;
 	top: 8px;
+	text-decoration: underline;
 }
 
 /*---------------------PROJECTS---------------------*/
@@ -215,6 +216,7 @@ html, body {
 	height: 60px;
 	width: 100%;
 	display: inline-block;
+	clear: both;
 }
 
 #footer div {
