@@ -13,10 +13,11 @@ function run(form) {
 	console.log(location + " " + color + " " + sugar + " " + lemon + " " + price);
 	var error = checkForms(location, color, sugar, lemon, price);
 	if (error == true) {
-		window.scrollTo(0, 0);
+		//window.scrollTo(0, 0);
 		return;
 	}
 	trial += 1;
+	updateProgress();
 	profit = calculateProfit(location, color, Number(sugar), Number(lemon), Number(price));
 	insertDataToTable(location, color, Number(sugar), Number(lemon), Number(price), profit);
 	// Reset the input forms
@@ -135,6 +136,11 @@ function calculateProfit(location, color, sugar, lemon, price) {
 				break;
 		}
 	return profit;
+}
+
+function updateProgress() {
+	document.getElementById("progress-bar").style.width = (trial * 5) + "%";
+	document.getElementById("number-complete").innerHTML = Number(document.getElementById("number-complete").innerHTML) + 1;
 }
 
 function insertDataToTable(location, color, sugar, lemon, price, profit) {
