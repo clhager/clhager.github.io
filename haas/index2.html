@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lemonade Stand</title>
+	<meta charset="utf-8">
+	<!--Bootstrap Imports-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Other Imports-->
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura:400"/>
+	<link rel="icon" type="image/png" href="lemon.png" />
+</head>
+<style>
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+body {
+	font-family: serif;
+	font-size: 1.6em;
+}
+
+.color-box-pink {
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	background-color: #f48fb1;
+}
+
+.color-box-green {
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	background-color: #4CAF50;
+}
+
+</style>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+	  		</button>
+			<a class="navbar-brand" style="font-family: sans-serif;letter-spacing: 2px;color: #999;">berkeley <span style="color:#0088ff;"><strong>haas</strong></span></a>
+		</div>
+		<div class="collapse navbar-collapse" id="topNav">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="mailto:GSI" style="font-size: 1em;font-family:sans-serif;">contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!--Title of the Page-->
+<div class="container-fluid">
+	<div class="row content">
+		<div class="col-sm-9">
+			<h2><strong>Lemonade Stand Profit Calculation</strong></h2>
+		</div>
+	</div>
+</div>
+<br>
+<!--Tabs Switch Script-->
+<div class="container-fluid">
+	<div class="row content">
+		<div class="col-sm-12">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#instructions">Instructions</a></li>
+				<li><a data-toggle="tab" href="#procedures">Procedures</a></li>
+				<li><a data-toggle="tab" href="#lemonade-stand">Lemonade Stand</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<br>
+<div class="tab-content">
+	<div id="instructions" class="tab-pane fade in active">
+		<div class="container-fluid">
+			<div class="row content">
+				<div class="col-sm-8">
+					<div class="well">
+						<p>You are now taking part in a business experiment. Please read the following instructions carefully. Everything that you need to know in order to participate in this experiment is explained below.</p>
+						<p>The experiment is divided into 20 periods. In each period you have to make decisions, which you will enter on the webpage listed above. The decisions you make and the amount of profit you earn will not be made known to the other participants - only you will know them.</p>
+						<p>Communication between participants is strictly prohibited during the experiment. In addition, you may use the webpage only as is designed for the experiment. Do not, for example, look at the HTML code underlying the webpage. In case you have any questions don’t hesitate to ask us.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="procedures" class="tab-pane fade">
+		<div class="container-fluid">
+			<div class="row content">
+				<div class="col-sm-8">
+					<div class="well">
+						<p>In this experiment, you will take on the role of an individual running a lemonade stand. There will be 20 periods in which you will have to make decisions on how to run the business. These decisions will involve the location of the stand, the lemonade color, the sugar and lemon content, and price. The last three characteristics are scaled between 0 and 10. Once you have selected your choices, click “calculate” to learn what profits you made during that period.</p>
+						<p>The website does not record profit, so please record your profit in all 20 periods on the profit report below. There are no practice periods and no opportunities to redo mistakes. So each participant will be clicking “calculate” a total of 20 times.</p>
+						<p>After you have finished all 20 periods, please calculate your average profit in periods 1-10 and your average profit in periods 11-20, as indicated in the report. As soon as you have finished, bring your profit report up to the front of the room so your results can be entered, and then wait quietly until your classmates have finished. Once the experiment begins, you will have 15 minutes to complete all 20 periods and turn in your report. If you do not complete all 20 periods you will receive zero profits for any unfinished periods.</p>
+						<p>The rest of these instructions include a note from the previous manager of the lemonade stand, an important note, and the profit report. Please read these materials carefully before beginning the experiment. And remember, communication between participants is strictly prohibited. Good luck!</p>
+					</div>
+					<br>
+					<p><strong>Note from Previous Manager:</strong></p>
+					<div class="well">
+						<p style="font-style: italic;">Dear Lemonade Stand Operator,</p>
+						<p style="font-style: italic;">I have enclosed the following guidelines that you may find helpful in running your lemonade stand. These guidelines are based on my previous experience running this stand.</p>
+						<p style="font-style: italic;">When running my business, I followed these basic guidelines:</p>
+						<p style="font-style: italic;">Location: Business District</p>
+						<p style="font-style: italic;">Lemonade Color: Green</p>
+						<p style="font-style: italic;"></p>
+						<p style="font-style: italic;">With these choices, I was able to make an average profit of about 90 per period. I have experimented with alternative choices of sugar and lemon content, as well as lemonade color and price. The above choices were the ones I found to be the best. I have not experimented with alternative choices of location though. They may require very different strategies.</p>
+						<p style="font-style: italic;">Good luck!</p>
+						<p style="font-family: 'Allura';font-size: 1.4em;">Previous Manager</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="lemonade-stand" class="tab-pane fade">
+		<div class="container-fluid">
+		<form>
+			<div class="row content">
+				<div class="col-sm-6">
+					<div class="well">
+						<p>Choose location:</p>
+						<div class="dropdown">
+							<script>
+								function menuDropDown(menu, string) {
+									document.getElementById(menu).innerHTML = string + ' &nbsp&nbsp <span class="caret"></span>';
+								}
+							</script>
+							<button class="btn btn-default dropdown-toggle" type="button" id="location" data-toggle="dropdown">
+								Location &nbsp&nbsp<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<li role="presentation"><a role="menuitem" style="cursor:pointer;" onclick="menuDropDown('location', 'Business District')">Business District</a></li>
+								<li role="presentation"><a role="menuitem" style="cursor:pointer;"onclick="menuDropDown('location', 'School')">School</a></li>
+								<li role="presentation"><a role="menuitem" style="cursor:pointer;"onclick="menuDropDown('location', 'Stadium')">Stadium</a></li>
+							</ul>
+						</div>
+						<br>
+						<br>
+						<p>Choose location<br />
+							<SELECT NAME="Location" ID="Location" SIZE="3">
+							<OPTION>Business District</OPTION>
+							<OPTION>School</OPTION>
+							<OPTION>Stadium</OPTION>
+						</SELECT></p>
+						<br>
+						<br>
+						<br>
+						<br>
+						<p>Choose lemonade color:</p>
+						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" id="lemonade-color" data-toggle="dropdown">
+								Color &nbsp&nbsp<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<li role="presentation"><a role="menuitem" style="cursor:pointer;"onclick="menuDropDown('lemonade-color', '<div class=color-box-pink></div> Pink')"><div class="color-box-pink"></div> Pink</a></li>
+								<li role="presentation"><a role="menuitem" style="cursor:pointer;"onclick="menuDropDown('lemonade-color', '<div class=color-box-green></div> Green')"><div class="color-box-green"></div> Green</a></li>
+							</ul>
+						</div>
+						<br>
+						<br>
+						<p>Choose location<br />
+							<SELECT NAME="Lemonade Color" ID="LemonadeColor" SIZE="2">
+							<OPTION>Pink</OPTION>
+							<OPTION>Green</OPTION>
+						</SELECT></p>
+					</div>
+				</div>
+			</div>
+			<div class="row content">
+				<div class="col-sm-6">
+					<div class="well">
+						<p>Choose between 0-10 and optionally a single decimal.</p>
+						<br>
+							<div class="form-group">
+								<label for="sugar">Sugar Content:</label>
+								<input type="sugar" class="form-control" placeholder="0,0.1,0.2, ..., 9.9,10" id="sugar">
+								<p style="visibility:hidden;color: red;font-style: italic;">Input must be a number between 0-10 with optionally one decimal</p>
+							</div>
+							<div class="form-group">
+								<label for="lemon">Lemon Content:</label>
+								<input type="lemon" class="form-control" placeholder="0,0.1,0.2, ..., 9.9,10" id="lemon">
+								<p style="visibility:hidden;color: red;font-style: italic;">Input must be a number between 0-10 with optionally one decimal</p>
+							</div>
+							<div class="form-group">
+								<label for="price">Price:</label>
+								<input type="price" class="form-control" placeholder="0,0.1,0.2, ..., 9.9,10" id="price">
+								<p style="visibility:hidden;color: red;font-style: italic;">Input must be a number between 0-10 with optionally one decimal</p>
+							</div>
+							<button type="button" class="btn btn-default">Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
