@@ -1,4 +1,10 @@
+var trial = 0;
+
 function run(form) {
+	if (trial >= 20) {
+		alert("You have finished the game, there are only 20 trials!")
+		return;
+	}
 	var location = document.getElementById("loc-answer").innerHTML;
 	var color = document.getElementById("color-answer").innerHTML;
 	var sugar = form.sugar.value;
@@ -10,9 +16,18 @@ function run(form) {
 		window.scrollTo(0, 0);
 		return;
 	}
+	trial += 1;
 	profit = calculateProfit(location, color, Number(sugar), Number(lemon), Number(price));
-	alert(profit);
+	insertDataToTable(location, color, Number(sugar), Number(lemon), Number(price), profit);
+	// Reset the input forms
+	menuDropDown('loc', '<span id=loc-answer>Location</span>');
+	menuDropDown('color', '<span id=loc-answer>Color</span>');
+	form.reset();
+	window.scrollTo(0, 0);
+}
 
+function menuDropDown(menu, string) {
+	document.getElementById(menu).innerHTML = string + ' &nbsp&nbsp <span class="caret"></span>';
 }
 
 function checkForms(location, color, sugar, lemon, price) {
@@ -120,4 +135,24 @@ function calculateProfit(location, color, sugar, lemon, price) {
 				break;
 		}
 	return profit;
+}
+
+function insertDataToTable(location, color, sugar, lemon, price, profit) {
+	var table = document.getElementById("data");
+	var row = table.insertRow(trial - 1);
+	var ttrial = row.insertCell(0);
+	var tlocation = row.insertCell(1);
+	var tcolor = row.insertCell(2);
+	var tsugar = row.insertCell(3);
+	var tlemon = row.insertCell(4);
+	var tprice = row.insertCell(5);
+	var tprofit = row.insertCell(6);
+
+	ttrial.innerHTML = trial;
+	tlocation.innerHTML = location;
+	tcolor.innerHTML = color;
+	tsugar.innerHTML = sugar;
+	tlemon.innerHTML = lemon;
+	tprice.innerHTML = price;
+	tprofit.innerHTML = profit;
 }
