@@ -1,5 +1,6 @@
 /*---------------------HMTL---------------------*/
 html, body {
+	height: 100%;
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Rubik';
@@ -60,7 +61,7 @@ html, body {
 
 /*---------------------BODY---------------------*/
 #body {
-	min-height: 460px;
+	min-height: 85%;
 	width: 100%;
 	margin: 0;
 	display: inline-block;
@@ -223,19 +224,4 @@ html, body {
 	position: relative;
 	top: 20px;
 	left: 2%;
-}
-
-/*---DEBUG---*/
-/*
-body {
-	background-color: red;
-}
-
-#header {
-	background-color: yellow;
-}
-
-
-#body {
-	background-color: green;
 }
