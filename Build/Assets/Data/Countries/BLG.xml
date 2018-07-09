@@ -1,0 +1,19 @@
+<country>
+  <header>
+    <tag>BGL</tag>
+    <start>987</start>
+    <end>NULL</end>
+    <color>#DEE880</color>
+  </header>
+  <mapLayouts>
+    <map>
+      <start>1957</start>
+      <end>NULL</end>
+      <pointList>
+        <point>belgiumnorth/1/18</point>
+        <point>lux/4/1</point>
+        <point>frenchnorth/19/1</point>
+      </pointList>
+    </map>
+  </mapLayouts>
+</country>

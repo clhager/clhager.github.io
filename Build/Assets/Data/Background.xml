@@ -1,0 +1,88 @@
+<background>
+  
+  <!--##########--> 
+  <!--# Europe #--> 
+  <!--##########--> 
+
+  <!--France-->
+  <pointList>
+    <point>frenchnorthcoast/1/37</point>
+    <point>frenchwestcoast/1/36</point>
+    <point>francesouth/1/11</point>
+    <point>andorra/1/1</point>
+    <point>andorra/6/4</point>
+    <point>francesouth/12/16</point>
+    <point>frenchsouthcoast/1/15</point>
+    <point>frencheast/34/1</point>
+    <point>frenchnorth/26/21</point>
+    <point>lux/7/4</point>
+    <point>belgiumnorth/18/16</point>
+    <point>netherlandseast/1/22</point>
+    <point>netherlandscoast/45/1</point>
+    <point>belgiumnorth/1/1</point>
+    <point>frenchnorth/1/1</point>
+  </pointList>
+  <pointList>
+    <point>texel/1/14</point>
+  </pointList>
+  <pointList>
+    <point>netherlandsisles/1/11</point>
+  </pointList>
+  <!--Ireland-->
+  <pointList>
+    <point>connachtcoast/1/25</point>
+    <point>munstercoast/1/46</point>
+    <point>leinstercoast/1/21</point>
+    <point>ulstercoast/49/1</point>
+  </pointList>
+  <!--Great Britain-->
+  <pointList>
+    <point>englandwestcoast/1/18</point>
+    <point>walescoast/1/37</point>
+    <point>englandsouthcoast/1/58</point>
+    <point>englandeastcoast/1/53</point>
+    <point>scotlandeastcoast/1/27</point>
+    <point>scotlandnorthcoast/1/36</point>
+    <point>scotlandwestcoast/1/68</point>
+  </pointList>
+  <!--North Ireland-->
+  <pointList>
+    <point>ulstercoast/27/49</point>
+    <point>leinstercoast/21/21</point>
+    <point>ulstersouth/13/12</point>
+    <point>northirelandsouth/12/1</point>
+    <point>ulstersouth/2/1</point>
+    <point>northirelandwest/1/9</point>
+  </pointList>
+  <!--Minor British isles-->
+  <pointList>
+    <point>mann/1/5</point>
+  </pointList>
+  <pointList>
+    <point>isleofwight/1/8</point>
+  </pointList>
+  <pointList>
+    <point>anglesey/1/8</point>
+  </pointList>
+  <pointList>
+    <point>orkney/1/11</point>
+  </pointList>
+  <pointList>
+    <point>stornoway/1/20</point>
+  </pointList>
+  <pointList>
+    <point>northuist/1/15</point>
+  </pointList>
+  <pointList>
+    <point>skye/1/18</point>
+  </pointList>
+  <pointList>
+    <point>isleofmull/1/10</point>
+  </pointList>
+  <pointList>
+    <point>islay/1/11</point>
+  </pointList>
+  <pointList>
+    <point>isleofarran/1/6</point>
+  </pointList>
+</background>

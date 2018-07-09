@@ -1,0 +1,15 @@
+<localization>
+  <term>
+    <tag>FEUDAL_MONARCHY</tag>
+    <English>Feudal Monarchy</English>
+    <French>Monarchie Féodale</French>
+  </term>
+  <term>
+    <tag>ABSOLUTE_MONARCHY</tag>
+    <English>Absolute Monarchy</English>
+  </term>
+  <term>
+    <tag>CONSTITUTIONAL_MONARCHY</tag>
+    <English>Constitutional Monarchy</English>
+  </term>
+</localization>

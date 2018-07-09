@@ -1,0 +1,101 @@
+<localization>
+  <term>
+    <tag>FRANCE</tag>
+    <English>France</English>
+    <French>France</French>
+  </term>
+  
+  <!-- Leaders -->
+  <term>
+    <tag>HUGH_CAPET</tag>
+    <English>Hugh Capet</English>
+    <French>Hugues Capet</French>
+  </term>
+  <term>
+    <tag>ROBERT_II</tag>
+    <English>Robert II the Pious</English>
+    <French>Robert II le Pieux</French>
+  </term>
+  <term>
+    <tag>HENRY_I</tag>
+    <English>Henry I</English>
+    <French>Henri Ier</French>
+  </term>
+  <term>
+    <tag>PHILIP_I</tag>
+    <English>Philip I the Amorous</English>
+    <French>Philippe Ier</French>
+  </term>
+  <term>
+    <tag>LOUIS_VI</tag>
+    <English>Louis VI the Fat</English>
+    <French>Louis VI le Gros</French>
+  </term>
+  <term>
+    <tag>LOUIS_VII</tag>
+    <English>Louis VII the Young</English>
+    <French>Louis VII le Jeune</French>
+  </term>
+  <term>
+    <tag>PHILIP_II</tag>
+    <English>Philip II Augustus</English>
+    <French>Philippe II Auguste</French>
+  </term>
+  <term>
+    <tag>LOUIS_VIII</tag>
+    <English>Louis VIII the Lion</English>
+    <French>Louis VIII le Lion</French>
+  </term>
+  
+  <!-- Governments -->
+  <term>
+    <tag>KINGDOM_OF_FRANCE</tag>
+    <English>Kingdom of France</English>
+    <French>Royaume de France</French>
+  </term>
+  <term>
+    <tag>FIRST_FRENCH_REPUBLIC</tag>
+    <English>First French Republic</English>
+    <French>Première République</French>
+  </term>
+  <term>
+    <tag>FIRST_FRENCH_EMPIRE</tag>
+    <English>First French Empire</English>
+    <French>Empire Français</French>
+  </term>
+  <term>
+    <tag>SECOND_FRENCH_REPUBLIC</tag>
+    <English>Second French Republic</English>
+    <French>Deuxième République</French>
+  </term>
+  <term>
+    <tag>SECOND_FRENCH_EMPIRE</tag>
+    <English>Second French Empire</English>
+    <French>Second Empire</French>
+  </term>
+  <term>
+    <tag>THIRD_FRENCH_REPUBLIC</tag>
+    <English>Third French Republic</English>
+    <French>Troisième République</French>
+  </term>
+  <term>
+    <tag>FREE_FRANCE</tag>
+    <English>Free France</English>
+    <French>France Libre</French>
+  </term>
+  <term>
+    <tag>PROVISIONAL_FRENCH_REPUBLIC</tag>
+    <English>Provisional Government of the French Republic</English>
+    <French>Gouvernement Provisoire de la République Française</French>
+  </term>
+  <term>
+    <tag>FOURTH_FRENCH_REPUBLIC</tag>
+    <English>Fourth French Republic</English>
+    <French>Quatrième République</French>
+  </term>
+  <term>
+    <tag>FIFTH_FRENCH_REPUBLIC</tag>
+    <English>Fifth French Republic</English>
+    <French>Cinquième République</French>
+  </term>
+</localization>

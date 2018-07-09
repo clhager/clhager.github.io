@@ -1,0 +1,18 @@
+<country>
+  <header>
+    <tag>LUX</tag>
+    <start>987</start>
+    <end>NULL</end>
+    <color>#0C34C9</color>
+  </header>
+  <mapLayouts>
+    <map>
+      <start>1957</start>
+      <end>NULL</end>
+      <pointList>
+        <point>lux/1/7</point>
+        <point>frenchnorth/21/19</point>
+      </pointList>
+    </map>
+  </mapLayouts>
+</country>

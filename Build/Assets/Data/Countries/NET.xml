@@ -1,0 +1,25 @@
+<country>
+  <header>
+    <tag>NET</tag>
+    <start>987</start>
+    <end>NULL</end>
+    <color>#FF4F00</color>
+  </header>
+  <mapLayouts>
+    <map>
+      <start>1957</start>
+      <end>NULL</end>
+      <pointList>
+        <point>netherlandscoast/1/45</point>
+        <point>netherlandseast/22/1</point>
+        <point>belgiumnorth/16/1</point>
+      </pointList>
+      <pointList>
+        <point>texel/1/14</point>
+      </pointList>
+      <pointList>
+        <point>netherlandsisles/1/11</point>
+      </pointList>
+    </map>
+  </mapLayouts>
+</country>
