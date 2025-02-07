@@ -1,0 +1,149 @@
+#body {
+  margin: 0px;
+}
+
+#header {
+  width: 100%;
+  background: #680000;
+  height: 60px;
+}
+
+.header-block {
+  height: 100%;
+  //background: green;
+  display: inline-block;
+}
+
+.header-section {
+  height: 100%;
+  //background: yellow;
+  float: right;
+  padding: 0px 10px 0px 10px;
+  display: block;
+}
+
+.header-section-text {
+  margin: auto;
+  color: white;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  text-align: center;
+  line-height: 48px;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+}
+
+.cta-button {
+  background: #FF9D2D;
+  color: #311E1E;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background: #BB6A0C;
+}
+
+.katsu-link {
+  text-decoration: none;
+}
+
+.medium-button {
+  border-radius: 6px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 450px) {
+  .medium-button {
+    border-radius: 12px;
+  }
+}
+
+.action-button {
+  background: #FF9D2D;
+  color: #311E1E;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.option-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.front-page-title {
+  color: white;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+@media only screen and (max-width: 450px) {
+  .front-page-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.light-front-page-title {
+  color: #311E1E;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.front-page-paragraph {
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 450px) {
+  .front-page-paragraph {
+    font-weight: 150;
+  }
+}
+
+.light-front-page-paragraph {
+  color: black;
+  font-family: 'Kanit', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.theContainer {
+  width: 300px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.theContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
