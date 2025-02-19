@@ -14,6 +14,23 @@
   width: 100%;
 }
 
+.root-desktop {
+  display: block;
+}
+
+.root-mobile {
+  display: none
+}
+
+@media only screen and (max-width: 450px) {
+  .root-desktop {
+    display: none;
+  }
+  .root-mobile {
+    display: block;
+  }
+}
+
 .header-block {
   height: 100%;
   //background: green;
@@ -125,6 +142,7 @@
   line-height: 22px;
   color: white;
   font-weight: 100;
+  text-decoration: none;
 }
 
 .action-button {
