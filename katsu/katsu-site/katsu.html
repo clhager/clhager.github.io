@@ -23,6 +23,7 @@ function toggleMenu() {
 function hideMenu() {
   console.log("hide");
   $("#scrim").css('display', 'none');
+  $('#body').css('overflow', 'auto');
   //document.getElementById("scrim").className = "scrim-hidden";
   $("#nav-bar-menu").css('margin-top', 72).animate({ 'margin-top': -50}, 1000, function() {
     menuShown = false;
@@ -40,12 +41,20 @@ function showMenu() {
   $("#nav-bar-menu").css('margin-top', -50).animate({ 'margin-top': 72 }, 1000, function() {
     menuShown = true;
     $("#scrim").css('display', 'block');
+    $('#body').css('overflow', 'hidden');
   });
 }
 </script>
 <body id="body" style="background: #680000;">
   <div id="root"></div>
   <div class="root-mobile">
+    <div id="nav-bar-menu" style="position: fixed; background-color: black; width: 100%; margin-top: -50px; height: 122px;">
+      <div class="nav-menu-item">Home</div>
+      <div style="height: 1px; width: 100%; background-color: grey;"></div>
+      <div class="nav-menu-item">About</div>
+      <div style="height: 1px; width: 100%; background-color: grey;"></div>
+      <div class="nav-menu-item">Contact</div>
+    </div>
     <div id="header-mobile" class="sticky" style="background: #680000; width: 100%; height: 72px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
       <div style="padding: 12px; height: 48px; width: 48px;">
         <div onclick="toggleMenu()" style="background-image: url(./assets/icons/menu.png); height: 100%; width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;"></div>
@@ -62,17 +71,9 @@ function showMenu() {
         </a>
       </div>
     </div>
-    <div id="nav-bar-menu" style="background-color: black; width: 100%; margin-top: -50px; height: 122px;">
-      <div class="nav-menu-item">Home</div>
-      <div style="height: 1px; width: 100%; background-color: grey;"></div>
-      <div class="nav-menu-item">About</div>
-      <div style="height: 1px; width: 100%; background-color: grey;"></div>
-      <div class="nav-menu-item">Contact</div>
-    </div>
     <div id="scrim" onclick="hideMenu()" class="scrim" style="display: none;"></div>
 
-
-    <div id="intro-mobile" style="background: black;">
+    <div id="intro-mobile" style="background: black; padding-top: 72px;">
       <img src="./assets/main_image_mobile.png" style="width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;" />
       <div style="padding: 0px 24px 24px 24px;">
         <div style="padding-bottom: 8px; text-align: center; color: white; font-family: 'Mochiy Pop P One', sans-serif; font-size: 24px; text-transform: uppercase;">The new katsu boss is in town!</div>
