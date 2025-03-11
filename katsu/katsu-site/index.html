@@ -25,7 +25,7 @@ function hideMenu() {
   $("#scrim").css('display', 'none');
   $('#body').css('overflow', 'auto');
   //document.getElementById("scrim").className = "scrim-hidden";
-  $("#nav-bar-menu").css('margin-top', 72).animate({ 'margin-top': -50}, 1000, function() {
+  $("#nav-bar-menu").css('margin-top', 72).animate({ 'margin-top': -50}, 250, function() {
     menuShown = false;
     $("#nav-bar-menu").css('background-color', "black");
   });
@@ -38,8 +38,9 @@ function showMenu() {
   $("#nav-bar-menu").css('background-color', "white");
   //document.getElementById("scrim").className = "scrim-shown";
   //$("#nav-bar-menu").css('background-color', 'white');
-  $("#nav-bar-menu").css('margin-top', -50).animate({ 'margin-top': 72 }, 1000, function() {
+  $("#nav-bar-menu").css('margin-top', -50).animate({ 'margin-top': 72 }, 250, function() {
     menuShown = true;
+    $("#nav-bar-menu").css('background-color', "white");
     $("#scrim").css('display', 'block');
     $('#body').css('overflow', 'hidden');
   });
@@ -57,21 +58,21 @@ function showMenu() {
     </div>
     <div id="header-mobile" class="sticky" style="background: #680000; width: 100%; height: 72px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
       <div style="padding: 12px; height: 48px; width: 48px;">
-        <div onclick="toggleMenu()" style="background-image: url(./assets/icons/menu.png); height: 100%; width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;"></div>
+        <div onclick="toggleMenu()" style="background-image: url(./assets/icons/menu.svg); height: 100%; width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;"></div>
       </div>
       <div style="padding: 8px; height: 56px; width: 56px;">
         <div style="background-image: url(./assets/Logo.png); height: 100%; width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;"></div>
       </div>
       <div style="padding: 10px 12px 0px 0px; height: 56px;">
         <a href="https://kingpin-katsu.square.site/s/order" class="katsu-link" target="_blank">
-          <div style="color: white; font-family: 'Mochiy Pop P One', sans-serif; text-decoration: underline; text-align: center; font-size: 16px;">
+          <div style="color: white; font-family: 'Mochiy Pop P One', sans-serif; text-decoration: none; text-align: center; font-size: 16px;">
             <span style="display: block;">ORDER<span>
             <span style="display: block;">NOW<span>
           </div>
         </a>
       </div>
     </div>
-    <div id="scrim" onclick="hideMenu()" class="scrim" style="display: none;"></div>
+    <div id="scrim" onmousedown="hideMenu()" ontouchstart="hideMenu()" class="scrim" style="display: none;"></div>
 
     <div id="intro-mobile" style="background: black; padding-top: 72px;">
       <img src="./assets/main_image_mobile.png" style="width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;" />
@@ -136,7 +137,7 @@ function showMenu() {
       </div>
     </div>
   </div>
-  <div style="padding: 20px; color: white; font-size: 12px; font-family: 'Mochiy Pop P One', sans-serif;">Website is still under development. Check back again soon!</div>
+  <div class="website-in-dev" style="padding: 20px; color: white; font-size: 12px; font-family: 'Mochiy Pop P One', sans-serif;">Website is still under development. Check back again soon!</div>
   <div id="header" style="display: none;">
     <div class="header-block" style="float: left; padding-left: 40px;">
       <div class="option-layout">
@@ -243,7 +244,7 @@ function showMenu() {
 </div>
 <script async src="https://www.instagram.com/embed.js"></script>
   <div style="display: flex; flex-direction: row; justify-content: center; padding: 20px;">
-    <div style="padding: 12px 12px 12px 0px;">
+    <div onmousedown="hi()" onmouseup="hello()"  style="padding: 12px 12px 12px 0px;">
       <img src="./assets/Logo.png" height="64px" width="64px">
     </div>
     <div style="display: flex; flex-direction: column; word-break: break-word;">

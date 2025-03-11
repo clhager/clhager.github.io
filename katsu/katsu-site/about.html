@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="./assets/Logo.png"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <title>Kingpin Katsu</title>
+  <meta name="theme-color" content="#000000">
+  <link href="./katsu.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mochiy+Pop+P+One&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<script>
+var menuShown = false;
+var menuAnimating = false;
+
+function toggleMenu() {
+  if (menuShown) { hideMenu(); }
+  else { showMenu(); }
+}
+function hideMenu() {
+  console.log("hide");
+  $("#scrim").css('display', 'none');
+  $('#body').css('overflow', 'auto');
+  //document.getElementById("scrim").className = "scrim-hidden";
+  $("#nav-bar-menu").css('margin-top', 72).animate({ 'margin-top': -50}, 250, function() {
+    menuShown = false;
+    $("#nav-bar-menu").css('background-color', "black");
+  });
+  //$("#nav-bar-menu").css('background-color', '#680000');
+  //document.getElementById("demo").innerHTML = "Hello World";
+}
+
+function showMenu() {
+  console.log("show");
+  $("#nav-bar-menu").css('background-color', "white");
+  //document.getElementById("scrim").className = "scrim-shown";
+  //$("#nav-bar-menu").css('background-color', 'white');
+  $("#nav-bar-menu").css('margin-top', -50).animate({ 'margin-top': 72 }, 250, function() {
+    menuShown = true;
+    $("#nav-bar-menu").css('background-color', "white");
+    $("#scrim").css('display', 'block');
+    $('#body').css('overflow', 'hidden');
+  });
+}
+</script>
+<body id="body" style="background: #680000;">
+  <div id="root"></div>
+  <div class="root-mobile">
+    <div id="nav-bar-menu" style="position: fixed; background-color: black; width: 100%; margin-top: -50px; height: 122px;">
+      <div class="nav-menu-item">Home</div>
+      <div style="height: 1px; width: 100%; background-color: grey;"></div>
+      <div class="nav-menu-item">About</div>
+      <div style="height: 1px; width: 100%; background-color: grey;"></div>
+      <div class="nav-menu-item">Contact</div>
+    </div>
+    <div id="header-mobile" class="sticky" style="background: #680000; width: 100%; height: 72px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+      <div style="padding: 12px; height: 48px; width: 48px;">
+        <div onclick="toggleMenu()" style="background-image: url(./assets/icons/menu.svg); height: 100%; width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;"></div>
+      </div>
+      <div style="padding: 8px; height: 56px; width: 56px;">
+        <div style="background-image: url(./assets/Logo.png); height: 100%; width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;"></div>
+      </div>
+      <div style="padding: 10px 12px 0px 0px; height: 56px;">
+        <a href="https://kingpin-katsu.square.site/s/order" class="katsu-link" target="_blank">
+          <div style="color: white; font-family: 'Mochiy Pop P One', sans-serif; text-decoration: none; text-align: center; font-size: 16px;">
+            <span style="display: block;">ORDER<span>
+            <span style="display: block;">NOW<span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="scrim" onmousedown="hideMenu()" ontouchstart="hideMenu()" class="scrim" style="display: none;"></div>
+
+    <div id="intro-mobile" style="background: black; padding-top: 72px;">
+      <img src="./assets/katsu.png" style="width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;" />
+      <div style="padding: 0px 24px 64px 24px;">
+        <div style="text-align: center; color: white; font-family: 'Mochiy Pop P One', sans-serif; font-size: 24px;">About Us</div>
+        <div style="padding: 20px 0px;" class="front-page-paragraph">Our journey began with a trip across Asia, where we immersed ourselves in the culinary traditions of Japan, Taiwan, Korea, and beyond, studying the art of creating the perfect Katsu. Combining the best techniques we could find, we returned to USA to bring you a brand new Katsu experience.</div>
+        <div style="display: flex; align-items: center; flex-direction: row-reverse;">
+          <div style="padding: 20px 0px 20px 18px; min-width: 120px; max-width:175px;" class="front-page-paragraph">We start by selecting the finest cuts of meat, dry-brine them overnight in a unique seasoning mixture and bread them with imported high-quality Panko breading.</div>
+          <img src="./assets/tonkatsu_curry.png" height="320" width="320" style="margin-left: -175px; background-position: center; background-size:contain; background-repeat: no-repeat;" />
+        </div>
+        <div style="padding: 20px 0px;" class="front-page-paragraph">The result is a extremely flavorful cutlet that keeps its structure after frying. All of our sides are hand-prepared fresh with local ingredients every day to pair perfectly with our Katsu. We hope our obsessive passion for Katsu is evident through the taste of our food.</div>
+        <div style="padding: 16px; text-align: center; color: white; font-family: 'Mochiy Pop P One', sans-serif; font-size: 24px;">Come taste the difference at Kingpin Katsu!</div>
+      </div>
+    </div>
+  <div style="display: flex; flex-direction: row; justify-content: center; padding: 20px;">
+    <div onmousedown="hi()" onmouseup="hello()"  style="padding: 12px 12px 12px 0px;">
+      <img src="./assets/Logo.png" height="64px" width="64px">
+    </div>
+    <div style="display: flex; flex-direction: column; word-break: break-word;">
+      <div class="bottom-info-title">Kingpin Katsu</div>
+      <div class="bottom-info-description">Fresh Katsu, made the way you choose.</div>
+      <div style="display: flex; flex-direction: column; padding-top: 8px;">
+        <div style="display: flex; flex-direction: row;">
+          <img class="link-item-icon" src="./assets/icons/insta_cream.svg" height="14px" width="14px" />
+          <a href="https://www.instagram.com/kingpin.katsu/" target="_blank" class="link-item-text">
+            www.instagram.com/kingpin.katsu/
+          </a>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <img class="link-item-icon" src="./assets/icons/fb.svg" height="14px" width="14px" />
+          <a href="https://www.facebook.com/Kingpin.Katsu/" target="_blank" class="link-item-text">
+            www.facebook.com/Kingpin.Katsu/
+          </a>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+          <img class="link-item-icon" src="./assets/icons/message.svg" height="14px" width="14px" />
+          <a href="mailto:kingpinkatsu@gmail.com" target="_blank" class="link-item-text">
+            kingpinkatsu@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="root-mobile">
+    <div style="padding: 11px 22px;">
+      <a href="https://kingpin-katsu.square.site/s/order" class="katsu-link" target="_blank">
+        <div class="action-button">ORDER NOW</div>
+      </a>
+    </div>
+    <div style="padding: 11px 22px 40px 22px;">
+      <a href="mailto:kingpinkatsu@gmail.com" class="katsu-link" target="_blank">
+        <div class="action-button">CONTACT US</div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

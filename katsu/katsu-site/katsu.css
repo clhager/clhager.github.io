@@ -23,7 +23,7 @@
 
 .scrim {
   position: fixed;
-  background-color: #00000085;
+  background-color: #00000050;
   width: 100%;
   top: 194px;
   height: 100vh;
@@ -219,7 +219,13 @@
 
 @media only screen and (max-width: 450px) {
   .front-page-paragraph {
-    font-weight: 150;
+    font-weight: 250;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .website-in-dev {
+    display: none;
   }
 }
 
