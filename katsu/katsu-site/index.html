@@ -36,12 +36,13 @@ function hideMenu() {
 function showMenu() {
   console.log("show");
   $("#nav-bar-menu").css('background-color', "white");
+  $("#scrim").css('display', 'block');
+
   //document.getElementById("scrim").className = "scrim-shown";
   //$("#nav-bar-menu").css('background-color', 'white');
   $("#nav-bar-menu").css('margin-top', -50).animate({ 'margin-top': 72 }, 250, function() {
     menuShown = true;
     $("#nav-bar-menu").css('background-color', "white");
-    $("#scrim").css('display', 'block');
     $('#body').css('overflow', 'hidden');
   });
 }
@@ -49,7 +50,8 @@ function showMenu() {
 <body id="body" style="background: #680000;">
   <div id="root"></div>
   <div class="root-mobile">
-    <div id="nav-bar-menu" style="position: fixed; background-color: black; width: 100%; margin-top: -50px; height: 122px;">
+    <div id="scrim" onmousedown="hideMenu()" ontouchstart="hideMenu()" class="scrim" style="display: none;"></div>
+    <div id="nav-bar-menu" style="position: fixed; background-color: black; width: 100%; margin-top: -50px;">
       <a href="./index.html" class="katsu-link">
         <div class="nav-menu-item">Home</div>
       </a>
@@ -58,7 +60,9 @@ function showMenu() {
         <div class="nav-menu-item">About</div>
       </a>
       <div style="height: 1px; width: 100%; background-color: grey;"></div>
-      <div style="display: none;" class="nav-menu-item">Contact</div>
+      <a href="./contact.html" class="katsu-link">
+        <div class="nav-menu-item">Contact</div>
+      </a>
     </div>
     <div id="header-mobile" class="sticky" style="background: #680000; width: 100%; height: 72px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
       <div style="padding: 12px; height: 48px; width: 48px;">
@@ -76,8 +80,6 @@ function showMenu() {
         </a>
       </div>
     </div>
-    <div id="scrim" onmousedown="hideMenu()" ontouchstart="hideMenu()" class="scrim" style="display: none;"></div>
-
     <div id="intro-mobile" style="background: black; padding-top: 72px;">
       <img src="./assets/main_image_mobile.png" style="width: 100%; background-position: center; background-size:contain; background-repeat: no-repeat;" />
       <div style="padding: 0px 24px 24px 24px;">
@@ -133,12 +135,30 @@ function showMenu() {
         </div>
       </div>
     </div>
+    <div style="margin: 22px 0px 0px 22px; padding-bottom: 48px; display: flex; align-items: center; flex-direction: row;">
+      <div style=" display: flex; align-items: flex-start;; flex-direction: column;">
+        <div style="padding: 0px 0px 16px 0px;" class="front-page-title">We do catering!</div>
+        <div style="padding: 0px 16px 0px 0px;" class="front-page-paragraph">We're officially open for catering! Order 2 days in advance and we'll deliver to your event's location free of charge! Check out our menu today or contact us for customized orders for special events.</div>
+      </div>
+      <img src="./assets/potato_salad.png" height="180" width="180" style="margin-top: 16px;border-radius: 16px 0px 0px 16px; background-position: center; background-size:contain; background-repeat: no-repeat;" />
+    </div>
+    <div style="padding: 32px 22px 0px 22px; background: white; display: flex; align-items: center; flex-direction: column;">
+      <div class="front-page-title" style="color: black; padding-bottom: 36px;">Inspired by Japan, born in the Bay Area</div>
+      <div class="front-page-paragraph" style="color: black; text-shadow: none;">We love everything katsu, except that it's hard to find it done right. We've broken down what makes Katsu great in Japan, Korea, and Hawaii and brought those techniques to you. From our crispy golden panko breading to our handcrafted side dishes, we aim to deliver an authentic Katsu experience with every bite.</div>
+      <img src="./assets/flags.png" height="100" style="margin: 24px 0px;border-radius: 16px 0px 0px 16px; background-position: center; background-size:contain; background-repeat: no-repeat;" />
+    </div>
+    <div style="padding: 0px 22px 22px 32px; background: white; display: flex; align-items: left; flex-direction: column;">
+      <div class="front-page-paragraph" style="color: black; text-shadow: none;">We serve the San Francisco Bay Area!</div>
+      <div class="front-page-paragraph" style="color: black; text-shadow: none;">Currently we are primarily catering large events. Our kitchen is located in Alameda, CA with service limited primarily to the East Bay. However, feel free to contact us with any special requests or questions!</div>
+    </div>
     <div style="padding: 22px; display: flex; justify-content: center;">
       <img src="./assets/icons/insta.svg" height="24px" width="24px"/>
-      <div style="display: flex; flex-direction: column; padding-left: 10px;">
-        <div class="insta-promo">Follow us on Instagram!</div>
-        <div class="insta-promo">@kingpin.katsu</div>
-      </div>
+      <a href="https://www.instagram.com/kingpin.katsu/" target="_blank" class="link-item-text">
+        <div style="display: flex; flex-direction: column; padding-left: 10px;">
+          <div class="insta-promo">Follow us on Instagram!</div>
+          <div class="insta-promo">@kingpin.katsu</div>
+        </div>
+      </a>
     </div>
   </div>
   <div class="website-in-dev" style="padding: 20px; color: white; font-size: 12px; font-family: 'Mochiy Pop P One', sans-serif;">Website is still under development. Check back again soon!</div>
