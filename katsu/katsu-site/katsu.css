@@ -1,7 +1,3 @@
-#body {
-  margin: 0px;
-}
-
 #header {
   width: 100%;
   background: #680000;
@@ -26,6 +22,7 @@
   background-color: #00000050;
   width: 100%;
   height: 100vh;
+  left: 0;
 }
 
 .katsu-input {
@@ -37,7 +34,19 @@
   margin-bottom: 24px; border-radius: 8px; width: 95%;
 }
 
+.root-item {
+  max-width: 800px;
+  margin: auto;
+}
+
 .root-desktop {
+  display: none;
+}
+.root-mobile {
+  display: block;
+}
+
+/*.root-desktop {
   display: block;
 }
 
@@ -52,7 +61,7 @@
   .root-mobile {
     display: block;
   }
-}
+}*/
 
 .header-block {
   height: 100%;
