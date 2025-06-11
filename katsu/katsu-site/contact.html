@@ -70,7 +70,7 @@ function showMenu() {
       </a>
       <div style="height: 1px; width: 100%; background-color: grey;"></div>
       <a href="./contact.html" class="katsu-link">
-        <div class="nav-menu-item">Contact</div>
+        <div class="nav-menu-item">Contact Us</div>
       </a>
     </div>
     <div id="header-mobile" class="sticky root-item" style="background: #680000; width: 100%; height: 72px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
@@ -90,20 +90,48 @@ function showMenu() {
       </div>
     </div>
     <div id="intro-mobile" style="background: black; padding-top: 72px;">
-      <div style="padding: 0px 24px 64px 24px;">
-        <div style="padding: 24px 0px; text-align: center; color: white; font-family: 'Mochiy Pop P One', sans-serif; font-size: 24px;">Contact Us</div>
-        <input class="katsu-input" id="full-name-input" placeholder=" Full Name *" />
-        <input class="katsu-input" id="email-input" type="email" placeholder=" Email *" />
-        <textarea class="katsu-input" id="message-input" style="height: 80px;" placeholder=" Your message *" ></textarea>
-        <div style="text-align: center; padding-bottom: 20px;" class="front-page-paragraph">You may receive marketing and promotional materials. Contact us for our privacy practices.</div>
-        <div onclick="sendEmail()" class="katsu-link">
-          <a href="mailto:kingpinkatsu@gmail.com?subject=&body=" >
-            <div class="action-button" style="margin-top: 8px;">SEND MESSAGE</div>
-          </a>
+      <div style="padding: 0px 24px 24px 24px;">
+        <div style="padding: 24px 0px 12px 0px; text-align: center; color: white; font-family: 'Mochiy Pop P One', sans-serif; font-size: 24px;">Contact Us</div>
+        <div style="display: flex; flex-direction: column; padding-top: 8px;">
+          <div style="display: flex; flex-direction: row;">
+            <img class="contact-item-icon" src="./assets/icons/insta_cream.svg" height="24px" width="24px" />
+            <a href="https://www.instagram.com/kingpin.katsu/" target="_blank" class="contact-item-text">
+              @kingpin.katsu
+            </a>
+          </div>
+          <div style="display: flex; flex-direction: row;">
+            <img class="contact-item-icon" src="./assets/icons/fb.svg" height="24px" width="24px" />
+            <a href="https://www.facebook.com/Kingpin.Katsu/" target="_blank" class="contact-item-text">
+              Kingpin.Katsu
+            </a>
+          </div>
+          <div style="display: flex; flex-direction: row;">
+            <img class="contact-item-icon" src="./assets/icons/message.svg" height="24px" width="24px" />
+            <a href="mailto:kingpinkatsu@gmail.com" target="_blank" class="contact-item-text">
+              kingpinkatsu@gmail.com
+            </a>
+          </div>
+          <div style="display: flex; flex-direction: row;">
+            <img class="contact-item-icon" src="./assets/icons/phone.png" height="24px" width="24px" />
+            <a href="tel:+5109172098" target="_blank" class="contact-item-text">
+              510-917-2098
+            </a>
+          </div>
+        </div>
+        <div style="display: none;">
+          <input class="katsu-input" id="full-name-input" placeholder=" Full Name *" />
+          <input class="katsu-input" id="email-input" type="email" placeholder=" Email *" />
+          <textarea class="katsu-input" id="message-input" style="height: 80px;" placeholder=" Your message *" ></textarea>
+          <div style="text-align: center; padding-bottom: 20px;" class="front-page-paragraph">You may receive marketing and promotional materials. Contact us for our privacy practices.</div>
+          <div onclick="sendEmail()" class="katsu-link">
+            <a href="mailto:kingpinkatsu@gmail.com?subject=&body=" >
+              <div class="action-button" style="margin-top: 8px;">SEND MESSAGE</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  <div style="display: flex; flex-direction: row; justify-content: center; padding: 20px;">
+  <div style="display: none; flex-direction: row; justify-content: center; padding: 20px;">
     <div onmousedown="hi()" onmouseup="hello()"  style="padding: 12px 12px 12px 0px;">
       <img src="./assets/Logo.png" height="64px" width="64px">
     </div>
@@ -132,7 +160,7 @@ function showMenu() {
       </div>
     </div>
   </div>
-  <div class="root-mobile">
+  <div class="root-mobile" style="padding-top: 18px;">
     <div style="padding: 11px 22px;">
       <a href="https://kingpin-katsu.square.site/s/order" class="katsu-link" target="_blank">
         <div class="action-button">ORDER NOW</div>
